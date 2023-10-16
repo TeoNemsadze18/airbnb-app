@@ -11,6 +11,13 @@
 		84EC8C762AD7DB8F002DB954 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C752AD7DB8F002DB954 /* ContentView.swift */; };
 		84EC8C782AD7DB92002DB954 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C772AD7DB92002DB954 /* Assets.xcassets */; };
 		84EC8C7B2AD7DB92002DB954 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EC8C7A2AD7DB92002DB954 /* Preview Assets.xcassets */; };
+		84EC8C862AD7DBF2002DB954 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C852AD7DBF2002DB954 /* APIService.swift */; };
+		84EC8C882AD7DF55002DB954 /* AirbnbListingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C872AD7DF55002DB954 /* AirbnbListingsView.swift */; };
+		84EC8C8A2AD7DFD2002DB954 /* AirbnbListingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C892AD7DFD2002DB954 /* AirbnbListingCardView.swift */; };
+		84EC8C8C2AD7E01B002DB954 /* AirbnbDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C8B2AD7E01B002DB954 /* AirbnbDetailView.swift */; };
+		84EC8C8E2AD7E14C002DB954 /* AirbnbListingsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C8D2AD7E14C002DB954 /* AirbnbListingsResponse.swift */; };
+		84EC8C912AD7E162002DB954 /* AirbnbListing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C902AD7E162002DB954 /* AirbnbListing.swift */; };
+		84EC8C932AD7EA1F002DB954 /* AirbnbListingsViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC8C922AD7EA1F002DB954 /* AirbnbListingsViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		84EC8C752AD7DB8F002DB954 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		84EC8C772AD7DB92002DB954 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EC8C7A2AD7DB92002DB954 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		84EC8C852AD7DBF2002DB954 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		84EC8C872AD7DF55002DB954 /* AirbnbListingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsView.swift; sourceTree = "<group>"; };
+		84EC8C892AD7DFD2002DB954 /* AirbnbListingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingCardView.swift; sourceTree = "<group>"; };
+		84EC8C8B2AD7E01B002DB954 /* AirbnbDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbDetailView.swift; sourceTree = "<group>"; };
+		84EC8C8D2AD7E14C002DB954 /* AirbnbListingsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsResponse.swift; sourceTree = "<group>"; };
+		84EC8C902AD7E162002DB954 /* AirbnbListing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListing.swift; sourceTree = "<group>"; };
+		84EC8C922AD7EA1F002DB954 /* AirbnbListingsViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbListingsViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +65,11 @@
 		84EC8C722AD7DB8F002DB954 /* airbnb */ = {
 			isa = PBXGroup;
 			children = (
+				84EC8C842AD7DBDF002DB954 /* Service */,
+				84EC8C832AD7DBD8002DB954 /* ViewModels */,
+				84EC8C822AD7DBD3002DB954 /* Models */,
+				84EC8C812AD7DBCE002DB954 /* View */,
 				84EC8C732AD7DB8F002DB954 /* airbnbApp.swift */,
-				84EC8C752AD7DB8F002DB954 /* ContentView.swift */,
 				84EC8C772AD7DB92002DB954 /* Assets.xcassets */,
 				84EC8C792AD7DB92002DB954 /* Preview Content */,
 			);
@@ -65,6 +82,42 @@
 				84EC8C7A2AD7DB92002DB954 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		84EC8C812AD7DBCE002DB954 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84EC8C752AD7DB8F002DB954 /* ContentView.swift */,
+				84EC8C872AD7DF55002DB954 /* AirbnbListingsView.swift */,
+				84EC8C892AD7DFD2002DB954 /* AirbnbListingCardView.swift */,
+				84EC8C8B2AD7E01B002DB954 /* AirbnbDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84EC8C822AD7DBD3002DB954 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				84EC8C8D2AD7E14C002DB954 /* AirbnbListingsResponse.swift */,
+				84EC8C902AD7E162002DB954 /* AirbnbListing.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		84EC8C832AD7DBD8002DB954 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84EC8C922AD7EA1F002DB954 /* AirbnbListingsViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		84EC8C842AD7DBDF002DB954 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84EC8C852AD7DBF2002DB954 /* APIService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +190,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC8C932AD7EA1F002DB954 /* AirbnbListingsViewViewModel.swift in Sources */,
+				84EC8C8E2AD7E14C002DB954 /* AirbnbListingsResponse.swift in Sources */,
 				84EC8C762AD7DB8F002DB954 /* ContentView.swift in Sources */,
+				84EC8C8C2AD7E01B002DB954 /* AirbnbDetailView.swift in Sources */,
+				84EC8C912AD7E162002DB954 /* AirbnbListing.swift in Sources */,
+				84EC8C882AD7DF55002DB954 /* AirbnbListingsView.swift in Sources */,
+				84EC8C8A2AD7DFD2002DB954 /* AirbnbListingCardView.swift in Sources */,
+				84EC8C862AD7DBF2002DB954 /* APIService.swift in Sources */,
 				84EC8C742AD7DB8F002DB954 /* airbnbApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
